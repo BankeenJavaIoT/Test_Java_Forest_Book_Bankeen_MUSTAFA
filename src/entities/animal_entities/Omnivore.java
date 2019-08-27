@@ -51,7 +51,7 @@ public class Omnivore extends Animal {
 		}
 		plantDietAsString += ")";
 		return "'" + getName() + "' is a Omnivore who eats " + plantDietAsString
-				+ ", and is a Carnivore who eats animals with maximum height of " + getMaxFoodSize() + ", [Weight="
+				+ ", and eats animals with maximum height of " + getMaxFoodSize() + ", [Weight="
 				+ getWeight() + ", Height=" + getHeight() + ", Length=" + getLength() + "]";
 	}
 }
