@@ -21,7 +21,7 @@ public class Tree extends Plant {
 
 	@Override
 	public String toString() {
-		return "Tree [Name=" + getName() + ", LeafType=" + getLeafType() + ", Height=" + getHeight() + "]";
+		return "'" + getName() + "' is a Tree, [LeafType=" + getLeafType() + ", Height=" + getHeight() + "]";
 	}
 
 }

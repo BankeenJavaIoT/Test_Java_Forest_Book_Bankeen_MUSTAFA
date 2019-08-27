@@ -31,7 +31,7 @@ public class Bush extends Plant {
 
 	@Override
 	public String toString() {
-		return "Bush [Name=" + getName() + ", Fruit=" + getFruit() + ", LeafType=" + getLeafType() + ", Height="
+		return "'" + getName() + "' is a Bush, [Fruit=" + getFruit() + ", LeafType=" + getLeafType() + ", Height="
 				+ getHeight() + "]";
 	}
 

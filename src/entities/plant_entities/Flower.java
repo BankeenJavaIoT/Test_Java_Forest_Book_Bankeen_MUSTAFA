@@ -21,7 +21,7 @@ public class Flower extends Plant {
 
 	@Override
 	public String toString() {
-		return "Flower [Name=" + getName() + ", Smell=" + getSmell() + ", Height=" + getHeight() + "]";
+		return "'" + getName() + "' is a Flower, [Smell=" + getSmell() + ", Height=" + getHeight() + "]";
 	}
 
 }

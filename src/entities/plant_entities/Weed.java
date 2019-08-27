@@ -21,7 +21,7 @@ public class Weed extends Plant {
 
 	@Override
 	public String toString() {
-		return "Weed [Name=" + getName() + ", Area=" + getArea() + ", Height=" + getHeight() + "]";
+		return "'" + getName() + "' is a Weed, [Area=" + getArea() + ", Height=" + getHeight() + "]";
 	}
 
 }

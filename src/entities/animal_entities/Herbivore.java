@@ -45,10 +45,10 @@ public class Herbivore extends Animal {
 	public String toString() {
 		String plantDietAsString = "(";
 		for (Plant plant : getPlantDiet()) {
-			plantDietAsString += plant.toString() + " ";
+			plantDietAsString += "'" + plant.getName() + "' ";
 		}
 		plantDietAsString += ")";
-		return "Herbivore [Name=" + getName() + ", PlantDiet=" + plantDietAsString + ", Weight=" + getWeight()
+		return "'" + getName() + "' is a Herbivore who eats " + plantDietAsString + ", [Weight=" + getWeight()
 				+ ", Height=" + getHeight() + ", Length=" + getLength() + "]";
 	}
 

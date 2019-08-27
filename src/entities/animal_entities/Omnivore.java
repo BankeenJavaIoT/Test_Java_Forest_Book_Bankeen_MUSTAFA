@@ -47,10 +47,11 @@ public class Omnivore extends Animal {
 	public String toString() {
 		String plantDietAsString = "(";
 		for (Plant plant : getPlantDiet()) {
-			plantDietAsString += plant.toString() + " ";
+			plantDietAsString += "'" + plant.getName() + "' ";
 		}
 		plantDietAsString += ")";
-		return "Omnivore [Name=" + getName() + ", PlantDiet=" + plantDietAsString + ", MaxFoodSize=" + getMaxFoodSize()
-				+ ", Weight=" + getWeight() + ", Height=" + getHeight() + ", Length=" + getLength() + "]";
+		return "'" + getName() + "' is a Omnivore who eats " + plantDietAsString
+				+ ", and is a Carnivore who eats animals with maximum height of " + getMaxFoodSize() + ", [Weight="
+				+ getWeight() + ", Height=" + getHeight() + ", Length=" + getLength() + "]";
 	}
 }
