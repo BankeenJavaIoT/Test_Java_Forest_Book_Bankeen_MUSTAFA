@@ -45,11 +45,15 @@ public class Omnivore extends Animal {
 
 	@Override
 	public String toString() {
+		//TODO think of performance a String is immutable so in this case i would've rather see a Stringbuilder variable
+		// and use the append method
 		String plantDietAsString = "(";
 		for (Plant plant : getPlantDiet()) {
+
 			plantDietAsString += "'" + plant.getName() + "' ";
 		}
 		plantDietAsString += ")";
+		// TODO you should initialize the plantDietString with this and just return the plantDietString instead
 		return "'" + getName() + "' is a Omnivore who eats " + plantDietAsString
 				+ ", and eats animals with maximum height of " + getMaxFoodSize() + ", [Weight="
 				+ getWeight() + ", Height=" + getHeight() + ", Length=" + getLength() + "]";

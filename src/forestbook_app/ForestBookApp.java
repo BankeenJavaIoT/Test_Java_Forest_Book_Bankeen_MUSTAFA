@@ -14,7 +14,7 @@ import entities.plant_entities.Scent;
 import entities.plant_entities.Tree;
 import entities.plant_entities.Weed;
 import service.ForestNoteBook;
-
+// TODO try to document your code!
 public class ForestBookApp {
 
 	public static void main(String[] args) {
@@ -27,6 +27,7 @@ public class ForestBookApp {
 		System.out.println("The number of animals in the forest notebook: " + forestObserverBook.getAnimalCount());
 		System.out.println("The number of plants in the forest notebook: " + forestObserverBook.getPlantCount());
 
+		//TODO use the repeat method -> System.out.println("=".repeat(20));
 		System.out.println("==========================================================");
 		System.out.println("Printing the forest notebook in standard fashion, without sorting");
 		forestObserverBook.printNotebook();

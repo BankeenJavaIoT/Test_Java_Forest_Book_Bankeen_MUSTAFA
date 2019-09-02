@@ -12,7 +12,7 @@ public class Animal {
 		this.height = height;
 		this.length = length;
 	}
-
+    //TODO what is the default value of a double ?
 	public Animal(String name) {
 		this(name, 0.0, 0.0, 0.0);
 	}

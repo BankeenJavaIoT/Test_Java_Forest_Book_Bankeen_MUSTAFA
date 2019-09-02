@@ -75,6 +75,7 @@ public class ForestNoteBook {
 		animalCount = animals.size();
 	}
 
+	//TODO i would've rather do the incrementation here in the getters
 	public int getPlantCount() {
 		return plantCount;
 	}
@@ -123,6 +124,8 @@ public class ForestNoteBook {
 		System.out.println("End of forest notebook contents.");
 	}
 
+	//TODO you could also optimize it by using Comparator.comparing
+	// animals.sort(Comparator.comparing(animal -> animal.getName()));
 	public void sortAnimalsByName() {
 		animals.sort(new Comparator<Animal>() {
 			@Override
